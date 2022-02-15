@@ -65,7 +65,7 @@ function App() {
   };
 
   const onRemove = (targetId) => {
-    console.log(`${targetId}삭제 되었습니다`);
+    // console.log(`${targetId}삭제 되었습니다`);
     const newDiaryList = data.filter((el) => el.id !== targetId);
     console.log(newDiaryList);
     setData(newDiaryList);
@@ -80,8 +80,6 @@ function App() {
   ];
 
   const getDiaryAnalysis = useMemo(() => {
-    console.log("일기분석시작");
-
     const goodCount = data.filter((it) => it.emotion >= 3).length;
     const badCount = data.length - goodCount;
     const goodRatio = (goodCount / data.length) * 100;
