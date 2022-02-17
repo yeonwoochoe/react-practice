@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 
 const hardCarculate = (number) => {
   console.log("어려운계산!");
-  for (let i = 0; i < 999999999; i++) {}
+  for (let i = 0; i < 99; i++) {}
   return number + 10000;
 };
 
