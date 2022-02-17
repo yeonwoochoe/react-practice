@@ -3,7 +3,7 @@ import Box from "./Box";
 
 const UseCallbackTwo = () => {
   const [size, setSize] = useState(100);
-  const [isDarks, setIsDarks] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   const createBoxStyle = useCallback(() => {
     return {
@@ -14,13 +14,13 @@ const UseCallbackTwo = () => {
     };
   }, [size]);
   return (
-    <div style={{ backgroundColor: isDarks ? "black" : "whtie" }}>
+    <div style={{ backgroundColor: isDark ? "black" : "white" }}>
       <input
         type="number"
         value={size}
         onChange={(e) => setSize(e.target.value)}
       />
-      <button onClick={() => setIsDarks(!isDarks)}>change </button>
+      <button onClick={() => setIsDark(!isDark)}>change </button>
       <Box createBoxStyle={createBoxStyle} />
     </div>
   );
