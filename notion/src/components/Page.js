@@ -6,6 +6,7 @@ import UseMemo from "./UseMemo";
 import UseMemoTwo from "./UseMemoTwo";
 import UseCallback from "./UseCallback";
 import UseCallbackTwo from "./UseCallbackTwo";
+import UseReducer from "./UseReducer";
 const Page = () => {
   return (
     <div className="page">
@@ -15,6 +16,7 @@ const Page = () => {
       <UseMemoTwo />
       <UseCallback />
       <UseCallbackTwo />
+      <UseReducer />
       <Footer />
     </div>
   );
